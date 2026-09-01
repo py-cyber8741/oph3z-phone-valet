@@ -1,4 +1,9 @@
+oph3z-phone-valet-app
+
+専用配車アプリ
+
 qbx_garagesでは試していない。
+
 AI挙動があんまりよくない。
 
 
