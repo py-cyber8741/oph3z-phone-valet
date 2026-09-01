@@ -1,3 +1,8 @@
+qbx_garagesでは試していない。
+AI挙動があんまりよくない。
+
+
+
 # oph3z-phone App Template
 
 This is a starter kit for building your own app for [**oph3z-phone**](https://github.com/Oph3Z1/oph3z-phone). Copy the
