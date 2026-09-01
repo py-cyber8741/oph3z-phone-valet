@@ -1,0 +1,22 @@
+{
+    "app_name": "Valet Service",
+    "app_desc": "Dispatch vehicles from your garage to your current location",
+    "loading": "Loading...",
+    "no_vehicles": "You don't own any vehicles",
+    "status_available": "Available",
+    "status_out": "Out / Parked",
+    "status_impounded": "Impounded",
+    "close_app": "Close App",
+    "dispatch_complete": "Valet Dispatched",
+    "is_on_the_way": "is on the way",
+    "engine": "Engine",
+    "body": "Body",
+    "fuel": "Fuel",
+    "blip_name": "Valet Service",
+    "notify_title": "Valet Arrived",
+    "notify_body": "Your vehicle has arrived.",
+    "err_dispatch_failed": "Failed to arrange valet (DB error or vehicle is out)",
+    "info_dispatching": "Arranging valet... Driver is on the way",
+    "err_network_sync": "Failed to sync network vehicle",
+    "err_spawn_failed": "Failed to spawn vehicle entity"
+}

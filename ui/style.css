@@ -1,0 +1,226 @@
+html,
+body {
+    margin: 0;
+    height: 100%;
+    background: #000;
+    color: #fff;
+    font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.share-mode {
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    box-sizing: border-box;
+    padding: 3.6em 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.7em;
+    background: radial-gradient(120% 80% at 50% 0%, #1a1a2e 0%, #000 70%);
+}
+
+.share-mode h2 { margin: 0 0 0.4em; text-align: center; }
+
+.app {
+    box-sizing: border-box;
+    height: 100%;
+    padding: 3.2em 1.5em 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6em;
+    background: radial-gradient(120% 80% at 50% 0%, #1a1a2e 0%, #000 70%);
+}
+
+.app h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.app p {
+    margin: 0;
+    font-size: 1rem;
+    color: #9a9aa2;
+    line-height: 1.4;
+}
+
+.app .number {
+    margin-top: 0.4em;
+    font-weight: 600;
+    color: #7b5cff;
+}
+
+.app .nick:empty {
+    display: none;
+}
+.app .nick {
+    font-weight: 600;
+    color: #34c759;
+}
+
+.buttons {
+    margin-top: 1.4em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6em;
+    width: 100%;
+    max-width: 15em;
+}
+
+.btn {
+    padding: 0.75em 1em;
+    border: 0;
+    border-radius: 0.8em;
+    background: #2a2a3a;
+    color: #fff;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.btn:active {
+    transform: scale(0.97);
+}
+
+.btn--primary {
+    background: #7b5cff;
+}
+
+/* --- Valet App 用カスタムカードスタイル --- */
+/* 車両リスト全体の横幅制限を完全に解除し、右側の空白を埋める */
+#vehicle-list {
+    max-width: 100% !important;
+    width: 100%;
+}
+
+.vehicle-btn {
+    background: #2a2a3a;
+    border: 1px solid #3a3a4a;
+    border-radius: 0.8em;
+    padding: 1em;
+    color: #fff;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+    width: 100%;
+    box-sizing: border-box;
+    transition: transform 0.1s, background 0.2s;
+}
+
+.vehicle-btn:active {
+    transform: scale(0.97);
+}
+
+.vehicle-btn:hover {
+    background: #353545;
+}
+
+/* 車名とナンバー、ステータスを囲むヘッダー */
+.veh-header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #3a3a4a;
+    padding-bottom: 0.6em;
+    width: 100%; /* 横幅いっぱいを使う */
+}
+
+/* 左側の車名・ナンバーのグループ */
+.veh-title-group {
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+}
+
+/* 右側のステータステキスト（強制的に右寄せにする） */
+.veh-status {
+    margin-left: auto; /* 左側の余白を最大化して右に押しやる */
+    white-space: nowrap;
+}
+
+/* 車名（長すぎる場合は「...」で省略してレイアウト崩れを防ぐ） */
+.veh-name {
+    font-weight: 700;
+    font-size: 1.1rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* ナンバープレートをバッジ風のデザインにして視認性をアップ */
+.veh-plate {
+    font-size: 0.8rem;
+    color: #d1d1d6;
+    background: #1c1c24; /* 暗い背景色を追加 */
+    padding: 3px 8px;    /* 内側に余白 */
+    border-radius: 4px;  /* 角丸 */
+    white-space: nowrap;
+}
+
+/* ゲージ部分のコンテナ（インデントを追加） */
+.veh-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    font-size: 0.75rem;
+    color: #bbb;
+    width: 100%;
+    padding-left: 12px; /* 【追加】Engineなどの項目全体を右に少しズラす */
+    box-sizing: border-box;
+}
+
+/* 各ステータスのブロック */
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    flex: 1; 
+    gap: 4px;
+    min-width: 0; 
+}
+
+/* ステータスのテキスト部分 */
+.stat-item span {
+    font-weight: 600;
+    white-space: nowrap; 
+    text-align: left;
+}
+
+/* プログレスバーのデザイン（長さを調整） */
+.stat-item progress {
+    width: 66%; /* 【変更】100% から 66% (約3分の2) に短縮 */
+    height: 6px;
+    border-radius: 3px;
+    appearance: none;
+    -webkit-appearance: none;
+}
+
+.stat-item progress::-webkit-progress-bar {
+    background-color: #1c1c24;
+    border-radius: 3px;
+}
+
+/* 状態ごとの色 (good = 緑, warn = 橙, danger = 赤) */
+.stat-item progress.good::-webkit-progress-value { background-color: #34c759; border-radius: 3px; }
+.stat-item progress.warn::-webkit-progress-value { background-color: #ff9f0a; border-radius: 3px; }
+.stat-item progress.danger::-webkit-progress-value { background-color: #ff453a; border-radius: 3px; }
+
+/* 出庫不可の車両カードのスタイル */
+.disabled-btn {
+    opacity: 0.5; /* 全体を半透明にして暗くする */
+    cursor: not-allowed;
+}
+
+/* ホバー時の色変化やクリック時の沈み込みを無効化 */
+.disabled-btn:hover {
+    background: #2a2a3a; 
+}
+.disabled-btn:active {
+    transform: none; 
+}

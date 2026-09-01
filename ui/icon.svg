@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="180" height="180" viewBox="0 0 180 180">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7b5cff" />
+      <stop offset="1" stop-color="#4321c9" />
+    </linearGradient>
+  </defs>
+  <!-- 背景（テンプレート共通） -->
+  <rect width="180" height="180" rx="40" fill="url(#g)" />
+  
+  <!-- 車と目的地の白抜きアイコン -->
+  <path d="M120 110 H60 C49 110 40 101 40 90 V80 C40 74 44 70 50 70 H65 L80 60 C85 57 90 55 95 55 H115 C129 55 140 66 140 80 V95 C140 103 134 110 126 110 C126 110 126 110 126 110 Z M65 105 A5 5 0 1 0 65 115 A5 5 0 0 0 65 105 Z M115 105 A5 5 0 1 0 115 115 A5 5 0 0 0 115 105 Z M150 70 A10 10 0 1 0 150 90 A10 10 0 0 0 150 70 Z M130 110 H100 C97 110 95 112 95 115 V130 C95 133 97 135 100 135 H130 C133 135 135 133 135 130 V115 C135 112 133 110 130 110 Z M120 125 L110 130 V120 Z" fill="#fff" transform="translate(10, 0)"/>
+</svg>

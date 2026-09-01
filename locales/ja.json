@@ -1,0 +1,22 @@
+{
+    "app_name": "Valet Service",
+    "app_desc": "ガレージの車両を現在地へ配車します",
+    "loading": "読み込み中...",
+    "no_vehicles": "所有している車両がありません",
+    "status_available": "配車可能",
+    "status_out": "出庫中/放置",
+    "status_impounded": "警察押収中",
+    "close_app": "アプリを閉じる",
+    "dispatch_complete": "配車手配完了",
+    "is_on_the_way": "が向かっています",
+    "engine": "Engine",
+    "body": "Body",
+    "fuel": "Fuel",
+    "blip_name": "配車サービス",
+    "notify_title": "配車完了",
+    "notify_body": "お車が到着しました。",
+    "err_dispatch_failed": "配車の手配に失敗しました（DBエラーまたは既に出庫中）",
+    "info_dispatching": "配車を手配中... 運転手を向かわせています",
+    "err_network_sync": "ネットワーク車両の同期に失敗しました",
+    "err_spawn_failed": "車両の実体化に失敗しました"
+}
